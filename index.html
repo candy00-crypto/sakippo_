@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>秘密な診断への入り口</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page">
+      <img
+        src="IMG_9047.JPG"
+        alt="秘密な診断への入り口"
+        class="background-image"
+      />
+      <div class="overlay">
+        <!-- ひみつをひらく ボタン（画像上に透明ボタンを重ねる） -->
+        <button
+          id="secretButton"
+          class="secret-button"
+          aria-label="ひみつをひらく"
+        ></button>
+
+        <!-- パスワード入力用ポップアップウィンドウ -->
+        <div id="passwordModal" class="modal hidden" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-title">パスワード</div>
+            <div class="modal-text">6桁のパスワードを入力してね</div>
+            <div class="modal-inputs">
+              <input type="password" maxlength="1" inputmode="numeric" class="digit-input modal-digit" />
+              <input type="password" maxlength="1" inputmode="numeric" class="digit-input modal-digit" />
+              <input type="password" maxlength="1" inputmode="numeric" class="digit-input modal-digit" />
+              <input type="password" maxlength="1" inputmode="numeric" class="digit-input modal-digit" />
+              <input type="password" maxlength="1" inputmode="numeric" class="digit-input modal-digit" />
+              <input type="password" maxlength="1" inputmode="numeric" class="digit-input modal-digit" />
+            </div>
+            <div id="modalError" class="modal-error"></div>
+            <div class="modal-buttons">
+              <button id="modalClose" class="modal-button secondary">
+                とじる
+              </button>
+              <button id="modalSubmit" class="modal-button primary">
+                ひみつをひらく
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
