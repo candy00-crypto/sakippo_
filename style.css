@@ -83,6 +83,8 @@ body {
   text-align: center;
   font-size: clamp(20px, 2.4vw, 28px);
   color: #ff7aa0;
+   line-height: 1;
+   padding: 0;
   outline: none;
   pointer-events: auto;
   transition: transform 0.15s ease, box-shadow 0.15s ease,
@@ -124,6 +126,18 @@ body {
   .secret-button {
     width: 60%;
     height: 18%;
+  }
+
+  /* スマホ時はモーダル内の数字がつぶれないように少し小さめに */
+  .modal-inputs {
+    gap: 8px;
+  }
+
+  .digit-input {
+    width: 38px;
+    height: 38px;
+    font-size: 22px;
+    border-width: 2px;
   }
 }
 
