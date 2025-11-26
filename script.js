@@ -86,7 +86,8 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     if (code === CORRECT_PASSWORD) {
-      window.location.href = "https://www.yahoo.co.jp";
+      window.location.href =
+        "https://note.com/saki_pochan/n/nb7a1fccdc5ea";
     } else {
       shakeWithMessage("パスワードが違います。");
     }
